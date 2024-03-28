@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Contact Me</h1>
+      <p id="description">
+        Please fill out the following form to be connected with me.
+      </p>
+      <form id="survey-form">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="name" id="name-label"
+            >Name:
+            <input
+              id="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+          </label>
+          <label for="email" id="email-label"
+            >Email:
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+          </label>
+          <label for="number" id="number-label"
+            >Age (optional):
+            <input
+              id="number"
+              type="number"
+              min="3"
+              max="120"
+              placeholder="Enter your age"
+            />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Contact Preferences</legend>
+          <p class="prompt">Do you want to be contacted?</p>
+          <label class="group" for="yes">
+            <input
+              id="yes"
+              type="radio"
+              name="contact-preference"
+              value="yes"
+            />
+            Yes
+          </label>
+          <label class="group" for="no">
+            <input id="no" type="radio" name="contact-preference" value="yes" />
+            No
+          </label>
+          <label
+            >How do you want to be contacted?
+            <select id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Email</option>
+              <option value="2">Text Message</option>
+            </select>
+          </label>
+          <p class="prompt">
+            When is the best time to reach you? (Choose all that apply)
+          </p>
+          <label class="group">
+            <input type="checkbox" name="time" value="morning" /> 9:00am -
+            12:00pm
+          </label>
+          <label class="group">
+            <input type="checkbox" name="time" value="afternoon" /> 12:00pm -
+            6:00pm
+          </label>
+          <label class="group">
+            <input type="checkbox" name="time" value="night" /> 6:00pm - 10pm
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Comments</legend>
+          <p class="prompt">Please leave your comments below:</p>
+          <label>
+            <textarea
+              cols="40"
+              rows="7"
+              placeholder="Hi, my name is ..."
+            ></textarea>
+          </label>
+        </fieldset>
+        <button id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
