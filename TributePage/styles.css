@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 /*----------------- Theme colors defined -----------------*/
 :root {
     --color1--: #050517;
@@ -10,7 +11,7 @@
 body {
     background: var(--color5--);
     color: var(--color1--);
-    font-family: Helvetica;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 /*----------------- Styling header element -----------------*/
@@ -19,6 +20,7 @@ header {
     background-color: var(--color1--);
     top: 0;
     position: fixed;
+    z-index: 99;
 }
 /*----------------- Styling navigation -----------------*/
 nav > ul {
@@ -39,6 +41,12 @@ nav > ul > li {
 li > a {
     color: inherit;
     text-decoration: none;
+    font-weight: 500;
+    padding: 9px 15px;
+}
+li > a:hover {
+    background: #3A3B3C;
+    border-radius: 5%;
 }
 h1 {
     color: var(--color3--);
@@ -46,10 +54,11 @@ h1 {
     margin: 21px auto;
     padding: 10px;
     box-sizing: border-box;
+    font-size: 2em;
 }
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 768px) {
   h1 {
-    font-size: max(8vw, 18px); /* Font size for screens smaller than 358px */
+    font-size: max(6vw, 16px); /* Font size for screens smaller than 358px */
   }
 }
 nav {
@@ -58,24 +67,29 @@ nav {
 header > * {
     width: 100%;
     display: inline-block;
+    
 }
 /*----------------- Styling main -----------------*/
 main {
-    padding: 5vw;
-    padding-top: 100px;
+    padding: 10vw;
+    padding-top: 200px;
 }
+
 /*----------------- Styling sections -----------------*/
 section {
-    margin: 100px auto;
+    scroll-margin-top: 200px;
+    padding: 50px 0 0 0;
 }
 /*----------------- Styling summary section -----------------*/
 #summary p{
     line-height: 2rem;
 }
 /*----------------- Styling img elements -----------------*/
-img {
-    width: 100%;
+#image {
+    max-width: 100%;
+    height: auto;
     margin: 10px auto;
+    display: block;
 }
 #img-caption {
     font-family: Times New Roman;
@@ -84,6 +98,7 @@ img {
 #img-div {
     width: 100%;
     max-width: 881px;
+    text-align: center;
     height: auto;
     margin: 0 auto;
 }
