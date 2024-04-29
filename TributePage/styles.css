@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 /*----------------- Theme colors defined -----------------*/
 :root {
-    --color1--: #050517;
-    --color2--: #CF5C36;
-    --color3--: #EFC88B;
-    --color4--: #F4E3B2;
-    --color5--: #D3D5D7;
+    --color1--: #0B3D91; /*deep blue*/
+    --color2--: #FFD700; /*gold*/
+    --color3--: #FFFFF0; /*Ivory*/
+    --color4--: #708090; /*Slate Gray*/
+    --color5--: #006400; /*Dark Green*/
 }
 /*----------------- Styling body element -----------------*/
 body {
