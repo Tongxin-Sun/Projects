@@ -1,23 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,600&family=Gideon+Roman&family=Roboto+Slab&family=Roboto:ital,wght@1,300&display=swap');
 /*----------------- Theme colors defined -----------------*/
 :root {
-    --color1--: #0B3D91; /*deep blue*/
-    --color2--: #FFD700; /*gold*/
-    --color3--: #FFFFF0; /*Ivory*/
-    --color4--: #708090; /*Slate Gray*/
-    --color5--: #006400; /*Dark Green*/
+    --color1--: #0a0908;
+    --color2--: #22333b;
+    --color3--: #eae0d5;
+    --color4--: #c6ac8f;
+    --color5--: #5e503f;
 }
 /*----------------- Styling body element -----------------*/
 body {
-    background: var(--color5--);
-    color: var(--color1--);
-    font-family: 'Poppins', sans-serif;
+    background: var(--color2--);
+    color: var(--color3--);
+    font-family: "Times New Roman", serif;
     margin: 0;
 }
 /*----------------- Styling header element -----------------*/
 header {
     width: 100%;
     background-color: var(--color1--);
+    color: var(--color3--);
     top: 0;
     position: fixed;
     z-index: 99;
@@ -33,7 +34,6 @@ nav > ul {
     height: 100%;
 }
 nav > ul > li {
-    color: var(--color3--);
     margin: 0 0.2rem;
     padding: 0.2rem;
     display: block;
@@ -45,11 +45,12 @@ li > a {
     padding: 9px 15px;
 }
 li > a:hover {
-    background: #3A3B3C;
+    background: var(--color4--);
     border-radius: 5%;
+    color: var(--color1--);
+    font-size: large;
 }
 h1 {
-    color: var(--color3--);
     text-align: center;
     margin: 21px auto;
     padding: 10px;
@@ -80,19 +81,15 @@ section {
     scroll-margin-top: 200px;
     padding: 50px 0 0 0;
 }
-/*----------------- Styling summary section -----------------*/
-#summary p{
-    line-height: 2rem;
-}
 /*----------------- Styling img elements -----------------*/
 #image {
     max-width: 100%;
     height: auto;
     margin: 10px auto;
     display: block;
+    box-shadow: rgba(0, 0, 0, 0.973) 0px 5px 15px;
 }
 #img-caption {
-    font-family: Times New Roman;
     text-align: center;
 }
 #img-div {
@@ -105,6 +102,11 @@ section {
 /*----------------- Styling tribute-info section -----------------*/
 .add-margin {
     margin: 10px auto;
+}
+p, #tribute-info ul li {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    line-height: 2.5rem;
 }
 /*----------------- Media queries -----------------*/
 @media (prefers-reduced-motion: no-preference) {
